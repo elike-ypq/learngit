@@ -1,0 +1,41 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#download data
+git clone https://github.com/xxxx/xxxxx.git
+#review current status
+git status
+#view history version of your code and all the information you have done
+git log
+git log --pretty=oneline   #get more clear output
+#initial an emputy repository
+git init repository_name
+#add files and commit them
+git add file_name
+git commit -m "please discribe what you have done"
+#reset the previous version
+git reset --hard HEAD^     #HEAD representative current version
+#hou hui yao
+git reflog  #view your history command
+#delet file and commit
+git rm file_name
+#git checkout #back 
+git commit -m ""
+#link to remote repo
+git remote add origin https://github.com/xxxx/xxxx.git
+#push file to the remote repo
+git push -u origin master
+#seconde commit $git push origin master
+#switch to new branch 'dev'
+git checkout -b dev
+#==$git branch dev
+    git checkout dev
+#view current branch
+git branch
+#back to master branch 
+git checkout master
+#merge created branches to master branch
+git merge dev
+#delete branch
+git branch -d dev
+#creat new tag
+git tag v1.0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
